@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "crafting-with-components",
+	"version": "${version}",
+	"name": "Crafting with components",
+	"description": "Mod that allows devs to create crafting recipies using data components.",
+	"authors": [
+		"Darth_squidious"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/crafting-with-components/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"crafting.CraftingWithComponents"
+		],
+		"client": [
+			"crafting.client.CraftingWithComponentsClient"
+		]
+	},
+	"mixins": [
+		"crafting-with-components.mixins.json",
+		{
+			"config": "crafting-with-components.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
