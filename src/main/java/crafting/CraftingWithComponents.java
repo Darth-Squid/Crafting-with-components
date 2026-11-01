@@ -27,7 +27,7 @@ public class CraftingWithComponents implements ModInitializer {
 
 		COMPONENT_MATCHING_SERIALIZER = Registry.register(
 				BuiltInRegistries.RECIPE_SERIALIZER,
-				Identifier.fromNamespaceAndPath("bliss", "component_matching"),
+				Identifier.fromNamespaceAndPath("cwc", "component_matching"),
 				new RecipeSerializer<>(
 						ComponentMatchingRecipeSerializer.CODEC,
 						ComponentMatchingRecipeSerializer.STREAM_CODEC));
